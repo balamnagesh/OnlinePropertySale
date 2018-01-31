@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">  
+<tiles-definitions>  
+
+                    <!--      Home Module        -->
+                    
+    <definition name="index1"   template="/WEB-INF/views/Home/index.jsp">   
+
+      
+        <put-attribute name="header" value="/WEB-INF/views/Home/header.jsp" />  
+        <put-attribute name="menu" value="/WEB-INF/views/Home/menu.jsp" />  
+        <put-attribute name="body" value="/WEB-INF/views/Home/body.jsp" />  
+        <put-attribute name="footer" value="/WEB-INF/views/Home/footer.jsp" />  
+    </definition> 
+    
+        <definition name="aboutus" extends="index1">
+        <put-attribute name="title" value="registration" />
+        <put-attribute name="body" value="/WEB-INF/views/Home/aboutus.jsp" />
+    </definition> 
+    
+     <definition name="contactus" extends="index1">
+        <put-attribute name="title" value="registration" />
+        <put-attribute name="body" value="/WEB-INF/views/Home/contactus.jsp" />
+    </definition> 
+    
+      <definition name="registration1" extends="index1">
+        <put-attribute name="title" value="registration" />
+        <put-attribute name="body" value="/WEB-INF/views/Home/Registration.jsp" />
+    </definition> 
+    
+      <definition name="registersuccess1" extends="index1">
+        <put-attribute name="title" value="registration" />
+        <put-attribute name="body" value="/WEB-INF/views/Home/registersuccess.jsp" />
+    </definition> 
+    
+     <definition name="login2" extends="index1">
+        <put-attribute name="title" value="login" />
+        <put-attribute name="body" value="/WEB-INF/views/Home/login.jsp" />
+    </definition> 
+    
+    <definition name="loginfailpage" extends="index1">
+        <put-attribute name="title" value="loginfail1" />
+        <put-attribute name="body" value="/WEB-INF/views/Home/loginfailure.jsp" />
+    </definition> 
+   
+   <definition name="forgot" extends="index1">
+        <put-attribute name="title" value="forgotpassword1" />
+        <put-attribute name="body" value="/WEB-INF/views/Home/forgotpassword.jsp" />
+    </definition> 
+   
+   <definition name="forgotpasswordsu" extends="index1">
+        <put-attribute name="title" value="forgotpasswordsuccess1" />
+        <put-attribute name="body" value="/WEB-INF/views/Home/forgotpasswordsucc.jsp" />
+    </definition> 
+    
+    <definition name="forgotpassworde" extends="index1">
+        <put-attribute name="title" value="forgotpassworderror" />
+        <put-attribute name="body" value="/WEB-INF/views/Home/forgotpassworderror.jsp" />
+    </definition> 
+   
+    <definition name="sessionexpired1" extends="index1">
+        <put-attribute name="title" value="sessionexpired" />
+        <put-attribute name="body" value="/WEB-INF/views/Home/sessionexpired.jsp" />
+    </definition> 
+    
+    <definition name="psessionexpire" extends="index1">
+        <put-attribute name="title" value="sessionexpired" />
+        <put-attribute name="body" value="/WEB-INF/views/Home/SessionPopUp.jsp" />
+    </definition> 
+   <definition name="403" extends="index1">
+ <put-attribute name="body" value="/WEB-INF/views/Home/403.jsp" />
+
+
+</definition>
+     <!--      Admin Module        -->
+   
+   <definition name="adminhome" extends="index1">
+
+<put-attribute name="title" value="AdminHomePage"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Admin/adminmenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Admin/adminhome.jsp"/>
+
+</definition>
+
+
+<definition name="viewusers" extends="index1">
+
+<put-attribute name="title" value="ViewUsers"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Admin/adminmenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Admin/viewusers.jsp"/>
+
+</definition>
+
+
+
+<definition name="viewagents" extends="index1">
+
+<put-attribute name="title" value="viewagents1"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Admin/adminmenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Admin/viewagents.jsp"/>
+
+</definition>
+
+
+<definition template="/WEB-INF/views/Admin/addagent.jsp" name="addagent1"> </definition>
+   
+   
+   <definition name="addagentsuccess1" extends="index1">
+
+<put-attribute name="title" value="addagentsuccess"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Admin/adminmenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Admin/addagentsuccess.jsp"/>
+
+</definition>
+   
+   
+   <definition name="adminupdateprofile1" extends="index1">
+
+<put-attribute name="title" value="adminupdateprofile"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Admin/adminmenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Admin/adminupdateprofile.jsp"/>
+
+</definition>
+
+
+<definition name="adminupdateprofilesucc1" extends="index1">
+
+<put-attribute name="title" value="adminupdateprofilesucc"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Admin/adminmenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Admin/adminupdateprofilesucc.jsp"/>
+
+</definition>
+   
+   
+   <definition name="adminchangepassword1" extends="index1">
+
+<put-attribute name="title" value="adminchangepassword"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Admin/adminmenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Admin/adminchangepassword.jsp"/>
+
+</definition>
+
+
+<definition name="adminchangepwdsucc1" extends="index1">
+
+<put-attribute name="title" value="adminchangepwdsucc"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Home/menu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Admin/adminchangepwdsucc.jsp"/>
+
+</definition>
+
+<definition name="adminchangepassworderror" extends="index1">
+
+<put-attribute name="title" value="adminchangepwderror"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Admin/adminmenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Admin/adminchangepassworderror.jsp"/>
+
+</definition>
+
+<definition name="adminlogout1" extends="index1">
+
+<put-attribute name="title" value="adminlogout"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Home/menu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Admin/adminlogout.jsp"/>
+
+</definition>
+
+<definition name="viewadminfeedbacks1" extends="index1">
+
+<put-attribute name="title" value="viewfeedbacks"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Admin/adminmenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Admin/viewfeedbacks.jsp"/>
+
+</definition>
+
+<definition name="adminviewproperties" extends="index1">
+
+<put-attribute name="title" value="viewproperties"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Admin/adminmenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Admin/viewproperties.jsp"/>
+
+</definition>
+
+<definition name="dbimport1" extends="index1">
+
+<put-attribute name="title" value="dbimport"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Admin/adminmenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Admin/DbImport.jsp"/>
+
+</definition>
+
+
+<definition name="dbexport1" extends="index1">
+
+<put-attribute name="title" value="dbexport"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Admin/adminmenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Admin/DbExport.jsp"/>
+
+</definition>
+
+<definition name="addexcel" extends="index1">
+
+<put-attribute name="title" value="addagentsuccess"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Admin/adminmenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Admin/excelsuccess.jsp"/>
+
+</definition>
+   
+<definition template="/WEB-INF/views/Admin/replyfeedbacks.jsp" name="replyfeedbackadmin1"> </definition>
+<definition template="/WEB-INF/views/Admin/updateagent.jsp" name="updateagent1"> </definition>
+<definition template="/WEB-INF/views/Admin/openjspexcel.jsp" name="openjsp"> </definition>
+
+
+  <!--      user Module        -->
+
+
+<definition name="userhome" extends="index1">
+
+<put-attribute name="title" value="UserHomePage"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/User/usermenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/User/userhome.jsp"/>
+
+</definition>
+
+
+<definition name="viewuserfeedback" extends="index1">
+
+<put-attribute name="title" value="viewuserfeedback1"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/User/usermenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/User/userfeedback.jsp"/>
+
+</definition>
+
+<definition name="feedbacksuccess1" extends="index1">
+
+<put-attribute name="title" value="viewuserfeedback1"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/User/usermenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/User/feedbacksuccess.jsp"/>
+
+</definition>
+
+<definition name="userupdateprofile1" extends="index1">
+
+<put-attribute name="title" value="Update Profile"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/User/usermenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/User/userupdateprofile.jsp"/>
+
+</definition>
+
+
+
+<definition name="userupdateprofilesucc1" extends="index1">
+
+<put-attribute name="title" value="Update Profile Success"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/User/usermenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/User/userupdateprofilesuccess.jsp"/>
+
+</definition>
+
+
+
+<definition name="userchangepassword1" extends="index1">
+
+<put-attribute name="title" value="Change Password"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/User/usermenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/User/userchangepassword.jsp"/>
+
+</definition>
+
+
+
+<definition name="userchangepwdsucc1" extends="index1">
+
+<put-attribute name="title" value="Change Password Success"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Home/menu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Home/userchangepwdsucc.jsp"/>
+
+</definition>
+
+<definition name="userchangepwdsucc1" extends="index1">
+
+<put-attribute name="title" value="Change Password Success"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Home/menu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/User/userchangepwdsucc.jsp"/>
+
+</definition>
+
+
+<definition name="userchangepwdfail" extends="index1">
+
+<put-attribute name="title" value="Change Password Success"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/User/usermenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/User/userchangepwdfail.jsp"/>
+
+</definition>
+
+
+
+<definition name="propertyview" extends="index1">
+
+<put-attribute name="title" value="Change Password Success"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/User/usermenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/User/propertyview.jsp"/>
+
+</definition>
+
+
+
+
+<definition name="userlogout1" extends="index1">
+
+<put-attribute name="title" value="Log Out"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Home/menu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/User/userlogout.jsp"/>
+
+</definition>
+
+
+<definition template="/WEB-INF/views/Agent/propertyupdate.jsp" name="propertyupdate"> </definition>
+
+
+<!-- Agent Module -->
+
+
+
+<definition name="agenthome" extends="index1">
+
+<put-attribute name="title" value="agenthome1"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Agent/agentmenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Agent/agenthome.jsp"/>
+
+</definition>
+
+<definition name="viewuser" extends="index1">
+
+<put-attribute name="title" value="viewusers1"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Agent/agentmenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Agent/viewusers.jsp"/>
+
+</definition>
+
+<definition name="viewproperty1" extends="index1">
+
+<put-attribute name="title" value="viewproperty"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Agent/agentmenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Agent/viewproperty.jsp"/>
+
+</definition>
+
+<definition name="viewagentfeedback" extends="index1">
+
+<put-attribute name="title" value="viewadminfeedback"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Agent/agentmenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Agent/viewagentfeedback.jsp"/>
+
+</definition>
+
+
+
+
+<definition name="agentupdateprofile2" extends="index1">
+
+<put-attribute name="title" value="spring tiles"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Agent/agentmenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Agent/agentupdateprofile.jsp"/>
+
+</definition>
+
+<definition name="agentupdatesuccess2" extends="index1">
+
+<put-attribute name="title" value="spring tiles"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Agent/agentmenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Agent/agentupdatesuccess.jsp"/>
+
+</definition>
+
+
+<definition name="agentpudatepropertysuccess" extends="index1">
+
+<put-attribute name="title" value="spring tiles"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Agent/agentmenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Agent/agentupdatepropertysuccess.jsp"/>
+
+</definition>
+
+
+<definition name="agentchangepassword2" extends="index1">
+
+<put-attribute name="title" value="spring tiles"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Agent/agentmenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Agent/agentchangepassword.jsp"/>
+
+</definition>
+
+<definition name="agentchangepwdsucc2" extends="index1">
+
+<put-attribute name="title" value="spring tiles"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Agent/agentmenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Agent/agentchangepwdsucc.jsp"/>
+
+</definition>
+
+<definition name="agentchangepassworderror2" extends="index1">
+
+<put-attribute name="title" value="spring tiles"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Agent/agentmenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Agent/agentchangepassworderror.jsp"/>
+
+</definition>
+
+
+<definition name="agentlogout1" extends="index1">
+
+<put-attribute name="title" value="agentlogout"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Home/menu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Agent/agentlogout.jsp"/>
+
+</definition>
+
+<definition name="updateusersuccess" extends="index1">
+
+<put-attribute name="title" value="agentlogout"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Agent/agentmenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Agent/updateusersuccess.jsp"/>
+
+
+</definition>
+
+
+<definition name="propertysuccess" extends="index1">
+
+<put-attribute name="title" value="addpropertysuccess"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Agent/agentmenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Agent/addpropertysuccess.jsp"/>
+
+</definition>
+
+<definition name="addagentfeedback" extends="index1">
+
+<put-attribute name="title" value="addpropertysuccess"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Agent/agentmenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Agent/agentaddfeedback.jsp"/>
+
+</definition>
+
+<definition name="agentfeedbacksuccess1" extends="index1">
+
+<put-attribute name="title" value="viewuserfeedback1"/>
+
+<put-attribute name="menu" value="/WEB-INF/views/Agent/agentmenu.jsp"/>
+
+<put-attribute name="body" value="/WEB-INF/views/Agent/agentfeedbacksuccess.jsp"/>
+
+</definition>
+
+
+
+<definition template="/WEB-INF/views/Agent/replyfeedbackagent.jsp" name="replyfeedbackagent"> </definition>
+
+<definition template="/WEB-INF/views/Agent/updateuser.jsp" name="updateuser"> </definition>
+<definition template="/WEB-INF/views/Agent/adduser.jsp" name="adduser"> </definition>
+<definition template="/WEB-INF/views/Agent/propertyadd.jsp" name="propertyadd"> </definition>
+   
+   </tiles-definitions>
